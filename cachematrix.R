@@ -1,12 +1,15 @@
-## This fie contains two functions for handling and 
+## This file contains two functions for handling and 
 ## inverting matrices in an efficient way
 ##
 ## The first function will construct a special matrix
 ## The second function will use the first "object" and
 ## store a cached version of its inverse
 
+
+## makeCacheMatrix
+##
 ## this function takes a matrix and stores it internally.
-## it hasa getters and setters which can be invoked externally
+## it has getters and setters which can be invoked externally
 ## moreover, it can store (and save/cache) its own inverse
 ## so that this does not need to be calculated over and over
 ##
@@ -28,6 +31,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
+## cacheSolve
+##
 ## this function "solves" a matrix by calculating its
 ## inverse. the matrix must be constructed by the function
 ## makeCacheMatrix described above.
